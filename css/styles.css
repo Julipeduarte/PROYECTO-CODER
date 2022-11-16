@@ -1,0 +1,180 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 5px rgb(245, 143, 160);
+  padding: 10px;
+  margin: 10px;
+}
+
+.p-index {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: 0.6rem;
+}
+.img-index {
+  width: 70%;
+  margin: 20px;
+}
+
+.subtitulos-main {
+  font-family: "Shadows Into Light", "cursive";
+  font-size: 2.2rem;
+}
+
+.main-contenedor {
+  justify-content: center;
+  text-align: center;
+}
+
+.prebioticos-contenedor {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.contenido-contenedor {
+  justify-content: center;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+ul li {
+  list-style: none;
+}
+.contacto {
+  padding: 20px;
+  margin: 20px;
+}
+
+.carousel-contenedor {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.newsyredes-contenedor {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  padding: 5px;
+}
+
+.newsletter-index {
+  background-color: #ebb6ba;
+  box-shadow: 2px 2px 5px rgb(64, 61, 61);
+  width: 600px;
+  margin: 20px;
+  padding: 20px;
+  height: 240px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.redsocial-index {
+  height: 200px;
+  width: 250px;
+  margin: 40px;
+  padding: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.newsletter-contenedor {
+  background-color: #ebb6ba;
+  box-shadow: 2px 2px 5px rgb(64, 61, 61);
+  width: 700px;
+  margin: 20px;
+  padding: 20px;
+  height: 240px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-contenedor:hover {
+  transform: scale(0.95);
+}
+
+.titulonews {
+  font-family: "Shadows Into Light", "cursive";
+}
+
+.redsocial-contenedor {
+  height: 200px;
+  width: 250px;
+  margin: 40px;
+  padding: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+.subtitulo-redsocial {
+  font-family: "Shadows Into Light", "cursive";
+  font-size: 1.7rem;
+}
+.logos:hover {
+  transform: scale(0.9);
+}
+.uno {
+  margin-top: 10px;
+  margin: 1px;
+  padding: 8px;
+}
+.dos {
+  margin: 1px;
+  padding: 1px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  box-sizing: border-box;
+  background-color: #d1a1a5;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1200px) {
+  .img-index {
+    width: 60%;
+  }
+
+  .p-index {
+    width: 50%;
+  }
+
+  main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-areas:
+      "p-index img-index"
+      "p-index img-index"
+      "newsletter-index redsocial-index";
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .newsletter-index:hover {
+    transform: scale(0.95);
+  }
+
+  footer {
+    display: none;
+  }
+}
